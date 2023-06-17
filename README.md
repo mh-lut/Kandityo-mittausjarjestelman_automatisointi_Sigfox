@@ -1,0 +1,1 @@
+# Kandityo-mittausjarjestelman_automatisointi_Sigfox
