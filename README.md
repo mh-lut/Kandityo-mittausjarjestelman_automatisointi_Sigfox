@@ -1,6 +1,6 @@
 # Kandityo-mittausjarjestelman_automatisointi_Sigfox
 
-This is an automated measurement system for sigfox reliability and latency at different speeds. The work consists of a sending device (rasberry pi + PiJuice + USB GPS + Arduino MKR FOX 1200) and a receiving server (node js) and sigfox callback json
+This is an automated measurement system for sigfox reliability and latency at different speeds. The work consists of a sending device (rasberry pi + PiJuice + USB GPS + Arduino MKR FOX 1200) and a receiving server (node js) and sigfox callback json.
 
 ## Table of Contents
 
