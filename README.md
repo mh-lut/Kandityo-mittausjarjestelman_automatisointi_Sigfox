@@ -7,13 +7,7 @@ This is an automated measurement system for sigfox reliability and latency at di
 - [Installation](#installation)
 - [Usage](#usage)
 - [Configuration](#configuration)
-- [File Structure](#file-structure)
-- [Sample Data](#sample-data)
-- [Troubleshooting](#troubleshooting)
-- [Contributing](#contributing)
-- [License](#license)
-- [Credits](#credits)
-- [Contact](#contact)
+
 
 ## Installation
 
@@ -59,5 +53,8 @@ Extra for Rasberry pi
   
 
 ## Usage
+If the server and sigfox backend are operational. The measuring system (rasberry pi + ...) only needs power to work and starts by itself if it is turned off one time with the shutdown.py script. The buttons in the PiJuice module work as follows. The left one stops the transmission and long pressed turns off the system (red light on led 2 blink means stop transmissoin and constantly means shutdown), the middle one changes the message sending interval (green light on led 2 blinks how many minutes interval is) when pressed once and the right one changes the length of the message and long pressed turns the device on if it is off (blue light on led 2 blinks how long message).
 
+## Configuration
+You can set message interval and lenght in the coinfog.ini file.
 
