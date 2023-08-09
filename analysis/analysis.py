@@ -129,13 +129,17 @@ def lost_message_graph(matching_pairs_list, unmatched_rows_list):
     # Separate the data into four lists based on the message lenght
     for message, _, _, _, _, _, _, speed in unmatched_rows_list:
         if len(message)/2 == 1:
-            unmatched_1.append(speed)
+            if speed != "None":
+                unmatched_1.append(speed)
         elif len(message)/2 == 4:
-            unmatched_4.append(speed)
+            if speed != "None":
+                unmatched_4.append(speed)
         elif len(message)/2 == 8:
-            unmatched_8.append(speed)
+            if speed != "None":
+                unmatched_8.append(speed)
         elif len(message)/2 == 12:
-            unmatched_12.append(speed)
+            if speed != "None":
+                unmatched_12.append(speed)
     
     for pair in matching_pairs_list:
         message, _, _, _, _, _, _, speed = pair[0]
@@ -156,11 +160,26 @@ def lost_message_graph(matching_pairs_list, unmatched_rows_list):
     
     # Calculate the percentage of unmatched messages for each size
     ranges = [(i, i+10) for i in range(0, 91, 10)]  # Generate ranges from 0 to 100 with step 10
-
-    percent_unmatched_1 = [calculate_percentage(unmatched_1, total_messages_1, lower, upper) for lower, upper in ranges]
-    percent_unmatched_4 = [calculate_percentage(unmatched_4, total_messages_4, lower, upper) for lower, upper in ranges]
-    percent_unmatched_8 = [calculate_percentage(unmatched_8, total_messages_8, lower, upper) for lower, upper in ranges]
-    percent_unmatched_12 = [calculate_percentage(unmatched_12, total_messages_12, lower, upper) for lower, upper in ranges]
+    if (len(total_messages_1) > 0):
+        percent_unmatched_1 = [calculate_percentage(unmatched_1, total_messages_1, lower, upper) for lower, upper in ranges]
+    else:
+        percent_unmatched_1 = [0]
+    if (len(total_messages_4) > 0):
+        percent_unmatched_4 = [calculate_percentage(unmatched_4, total_messages_4, lower, upper) for lower, upper in ranges]
+    else:
+        percent_unmatched_4 = [0]
+    if (len(total_messages_8) > 0):
+        percent_unmatched_8 = [calculate_percentage(unmatched_8, total_messages_8, lower, upper) for lower, upper in ranges]
+    else:
+        percent_unmatched_8 = [0]
+    if (len(total_messages_12) > 0):
+        percent_unmatched_12 = [calculate_percentage(unmatched_12, total_messages_12, lower, upper) for lower, upper in ranges]
+    else:
+        percent_unmatched_12 = [0]
+        
+    
+    
+    
     
     range_labels = [f'{lower}-{upper}' for lower, upper in ranges]
     
