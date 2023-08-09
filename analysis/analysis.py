@@ -193,9 +193,9 @@ def lost_message_graph(matching_pairs_list, unmatched_rows_list):
     bar_8 = ax.bar(x + 0.5*width, percent_unmatched_8, width, label='Message lenght 8')
     bar_12 = ax.bar(x + 1.5*width, percent_unmatched_12, width, label='Message lenght 12')
 
-    ax.set_xlabel('Speed')
-    ax.set_ylabel('Percentage Unmatched')
-    ax.set_title('Percentage of Unmatched Messages')
+    ax.set_xlabel('Speed (km/h)')
+    ax.set_ylabel('%')
+    ax.set_title('Percentage of undelivered messages')
     ax.set_xticks(x)
     ax.set_xticklabels(range_labels)
     ax.legend()
@@ -209,6 +209,7 @@ def lost_message_graph(matching_pairs_list, unmatched_rows_list):
     plt.xticks(rotation=45)
     plt.tight_layout()
 
+    plt.grid(axis='y', linestyle='-', alpha=0.8) # Add grid - only across
     plt.show()
 
     return None
@@ -237,9 +238,9 @@ def delay_graph(delay_lists):
     plt.hist(delay_only_list_12, bins=1000, density=True, histtype='step', color='black',cumulative=True, alpha=0.5, label='Message lenght 12')
 
     # Add labels and title
-    plt.xlabel('Time')
-    plt.ylabel('Cumulative Probability')
-    plt.title('Cumulative Distribution Plot')
+    plt.xlabel('Time (second)')
+    plt.ylabel('%')
+    plt.title('Message arrival time')
 
     # Add a legend
     plt.legend()
@@ -299,7 +300,7 @@ def delay_graph_2(delay_lists):
 
     # Add labels, title, and legend...
     ax.set_xlabel('Message lenght')
-    ax.set_ylabel('Time')
+    ax.set_ylabel('Time (second)')
     ax.set_title('Delay')
     ax.set_xticks(x)
     ax.set_xticklabels(['1', '4', '8', '12'])
