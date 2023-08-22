@@ -51,7 +51,7 @@ sudo apt-get install screen
 ```bash
 screen
 ```
-    - Derach from session Ctrl-a + d
+   - Derach from session Ctrl-a + d
 
 Set Sigfox:
   * Add device and
