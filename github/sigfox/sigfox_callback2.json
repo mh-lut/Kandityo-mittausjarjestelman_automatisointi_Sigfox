@@ -1,0 +1,13 @@
+{
+  "device": "{device}",
+  "time": "{time}",
+  "seqNumber": "{seqNumber}",
+  "data": "{data}",
+  "deviceTypeId": "{deviceTypeId}",
+  "lqi": "{lqi}",
+  "linkQuality": "{linkQuality}",
+  "fixedLat": "{fixedLat}",
+  "fixedLng": "{fixedLng}",
+  "operatorName": "{operatorName}",
+  "countryCode": "{countryCode}"
+}
