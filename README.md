@@ -18,9 +18,9 @@ Arduino
 
 Rasberry pi (Raspberry Pi OS)
   * Update system and install python libaries:
-    - ```bash
-      pip install pijuice pyserial pynmea2
-      ```
+```bash
+pip install pijuice pyserial pynmea2
+```
   * Put the programs in the desired folder with sufficient rights
   * Connect the Arduino and gps to the usb ports
     - Find device paths
