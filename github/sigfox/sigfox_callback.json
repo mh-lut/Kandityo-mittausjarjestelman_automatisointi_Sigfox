@@ -1,7 +1,0 @@
-{
-  "device": "{device}",
-  "time": "{time}",
-  "seqNumber": "{seqNumber}",
-  "data": "{data}",
-  "deviceTypeId": "{deviceTypeId}"
-}
