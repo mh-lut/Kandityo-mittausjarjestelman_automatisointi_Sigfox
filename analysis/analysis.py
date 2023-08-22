@@ -347,6 +347,8 @@ def location_map(matching_pairs_list, unmatched_rows_list):
 def main():
     # Find pairs
     matching_pairs_list, unmatched_rows_list = check_pairs('./database.db', './database2.db')
+    print("Lost messages: " + str(len(unmatched_rows_list)))
+    print("Received messages: " + str(len(matching_pairs_list)))
 
     # Calculate delay
     delay_lists = calculate_delay(matching_pairs_list)
