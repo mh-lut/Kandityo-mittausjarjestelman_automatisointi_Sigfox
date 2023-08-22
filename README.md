@@ -18,15 +18,13 @@ Arduino
 
 Rasberry pi (Raspberry Pi OS)
   * Update system and install python libaries:
-```bash
-pip install pijuice pyserial pynmea2
-```
+```bash pip install pijuice pyserial pynmea2```
   * Put the programs in the desired folder with sufficient rights
   * Connect the Arduino and gps to the usb ports
     - Find device paths
   * Set the file and device paths to the correct ones in the sigfox.py and autoTransfer.py programs
   * Set PiJuice:
-  * Install pujuice
+  * Install pijuice:
 ```bash sudo apt-get install pijuice-gui```
     - Set right battery info (Battery -> Profile)
     - Set minimun charge esample 20 % (System Task)
@@ -42,13 +40,8 @@ Linux server
   * Make Node.js + Express server and add route
     - Route = index.js
   * If nessesary set a screen so that the server stays on even if the terminal connection is lost.
-```bash
-sudo apt-get install screen
-```
-
-```bash
-screen
-```
+```bash sudo apt-get install screen```
+```bash screen```
    - Derach from session Ctrl-a + d
 
 Set Sigfox:
