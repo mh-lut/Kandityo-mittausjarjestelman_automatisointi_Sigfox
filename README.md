@@ -25,7 +25,8 @@ pip install pijuice pyserial pynmea2
   * Connect the Arduino and gps to the usb ports
     - Find device paths
   * Set the file and device paths to the correct ones in the sigfox.py and autoTransfer.py programs
-  * Set PiJuice ...:
+  * Set PiJuice:
+  * Install pujuice
 ```bash
 sudo apt-get install pijuice-gui
 ```
