@@ -40,7 +40,9 @@ Linux server
     - Route = index.js
   * If nessesary set a screen so that the server stays on even if the terminal connection is lost.
     - 
-    - ```bash sudo apt-get install screen ```
+    - ```bash
+       sudo apt-get install screen
+      ```
     - ```bash screen```
     - Derach from session Ctrl-a + d
 
