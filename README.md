@@ -27,14 +27,12 @@ pip install pijuice pyserial pynmea2
   * Set the file and device paths to the correct ones in the sigfox.py and autoTransfer.py programs
   * Set PiJuice:
   * Install pujuice
-```bash
-sudo apt-get install pijuice-gui
-```
-   - Set right battery info (Battery -> Profile)
-   - Set minimun charge esample 20 % (System Task)
-   - Set low charge on and script to "USER_FUNC1" (System Events)
-   - Set user scripts (USER FUNC1 = shutdown.py and USER FUNC2 = changeConfig.py)
-   - Set buttons (example SW1 press = USER_FUNC2, SW2 press = HARD_FUNC_POWER_ON and SW3 press = USER_FUNC1)
+```bash sudo apt-get install pijuice-gui```
+    - Set right battery info (Battery -> Profile)
+    - Set minimun charge esample 20 % (System Task)
+    - Set low charge on and script to "USER_FUNC1" (System Events)
+    - Set user scripts (USER FUNC1 = shutdown.py and USER FUNC2 = changeConfig.py)
+    - Set buttons (example SW1 press = USER_FUNC2, SW2 press = HARD_FUNC_POWER_ON and SW3 press = USER_FUNC1)
   * Set crontab:
     - Set sigfox.py to start when system starts (example @reboot /home/pi/sigfoxTest/sigfox.py &)
     - Set autoTransfer.py to start when system starts (example @reboot /home/pi/sigfoxTest/autoTransfer.py &)
