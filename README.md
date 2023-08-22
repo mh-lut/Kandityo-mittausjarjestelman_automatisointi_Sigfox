@@ -25,7 +25,7 @@ Rasberry pi (Raspberry Pi OS)
   * Set the file and device paths to the correct ones in the sigfox.py and autoTransfer.py programs
   * Set PiJuice:
   * Install pijuice:
-```bash sudo apt-get install pijuice-gui```
+```sudo apt-get install pijuice-gui```
     - Set right battery info (Battery -> Profile)
     - Set minimun charge esample 20 % (System Task)
     - Set low charge on and script to "USER_FUNC1" (System Events)
@@ -40,8 +40,8 @@ Linux server
   * Make Node.js + Express server and add route
     - Route = index.js
   * If nessesary set a screen so that the server stays on even if the terminal connection is lost.
-```bash sudo apt-get install screen```
-```bash screen```
+```sudo apt-get install screen```
+```screen```
    - Derach from session Ctrl-a + d
 
 Set Sigfox:
