@@ -15,6 +15,8 @@ Arduino
   * Upload program to arduino
     - arduino_sigfox.ino
 
+
+
 Rasberry pi (Raspberry Pi OS)
   * Update system and install python libaries:
 ```pip install pijuice pyserial pynmea2```
