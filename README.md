@@ -2,6 +2,9 @@
 
 This project is an automated measurement system for sigfox reliability and latency. The work consists of a sending device (Rasberry Pi + PiJuice + USB GPS + Arduino MKR FOX 1200), a receiving server (Node.js) and Sigfox-callbacks (json).
 
+Link to the full work:
+https://urn.fi/URN:NBN:fi-fe20230829111882
+
 ![System structure](system_structure.png)
 
 ## Table of Contents
